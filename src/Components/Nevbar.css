@@ -144,3 +144,21 @@
 .hero-search button:hover{
     background-color: #361be76d;
 }
+
+.main-section{
+    width: 100%;
+    height: 500px;
+    background-color: #ffffff;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer-section{
+    width: 100%;
+    height: 500px;
+    background-color: #898686;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}

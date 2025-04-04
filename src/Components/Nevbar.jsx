@@ -41,4 +41,16 @@ const HeroSection = () => {
   )
 }
 
-export { Nevbar, HeroSection }
+const Main = () =>{
+  return (
+  <div className="main-section"><h1>MAIN SECTION</h1></div>
+  )
+}
+
+const Footer = () =>{
+  return(
+   <div className="footer-section"><h1>FOOTER SECTION</h1></div>
+  )
+}
+
+export { Nevbar, HeroSection, Main, Footer }

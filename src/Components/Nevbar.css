@@ -76,12 +76,12 @@
     }
 }
 
-
 .hero {
     width: 100%;
     height: 70vh;
     background-image: url('./hero-image.webp');
     background-size: cover;
+    background-position: center;
 }
 
 .hero-opacity {
@@ -90,60 +90,113 @@
     background-color: rgba(0, 0, 0, 0.9);
     display: flex;
     align-items: center;
-    padding: 20px 0px;
+    justify-content: center;
+    padding: 20px 10px;
     flex-direction: column;
 }
 
 .hero-intro {
-    width: 95%;
-    height: 70%;
+    width: 100%;
+    max-width: 1200px;
+    height: auto;
     display: flex;
     align-items: center;
     flex-direction: column;
     gap: 20px;
+    padding: 0 15px;
+    text-align: center;
 }
 
 .text1 p {
     color: aliceblue;
-    font-size: larger;
+    font-size: 1.8rem;
     font-weight: 700;
     text-shadow: 2px 2px 5px rgba(0, 0, 255, 0.7);
-
 }
 
-.text2 p{
+.text2 p {
     color: #bab3b3;
+    font-size: 1rem;
 }
 
-.text3 p{
-    color:#fffbfb
+.text3 p {
+    color: #fffbfb;
+    font-size: 1rem;
 }
 
-.hero-search{
-    width: 40%;
-    height: 2rem;
+.hero-search {
+    width: 30%;
+    max-width: 500px;
+    height: 2.5rem;
+    display: flex;
     border-radius: 10px;
     overflow: hidden;
     box-shadow: 0 4px 10px rgba(0, 0, 255, 0.5);
 }
 
-.hero-search input{
-    width: 80%;
+.hero-search input {
+    width: 100%;
     height: 100%;
-    border:none;
-    padding: 10px;
+    border: none;
+    padding: 0 10px;
+    font-size: 1rem;
+    outline: none;
 }
 
-.hero-search button{
+.hero-search button {
     width: 20%;
     height: 100%;
-    border:none;
+    border: none;
     cursor: pointer;
+    background-color: #3b21cc;
+    color: white;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
 }
 
-.hero-search button:hover{
+.hero-search button:hover {
     background-color: #361be76d;
 }
+
+@media (max-width: 768px) {
+    .text1 p {
+        font-size: 1.4rem;
+    }
+
+    .text2 p,
+    .text3 p {
+        font-size: 0.95rem;
+    }
+
+    .hero-search {
+        height: 2.2rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .text1 p {
+        font-size: 1.2rem;
+    }
+
+    .text2 p,
+    .text3 p {
+        font-size: 0.9rem;
+    }
+
+    .hero-search {
+        flex-direction: column;
+        height: auto;
+        box-shadow: none;
+        gap: 5px;
+    }
+
+    .hero-search input,
+    .hero-search button {
+        width: 100%;
+        height: 2.5rem;
+    }
+}
+
 
 .main-section{
     width: 100%;
